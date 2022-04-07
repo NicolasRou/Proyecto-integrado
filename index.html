@@ -1,12 +1,203 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bulma.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    
+    <title>Proyecto Integrado</title>
 </head>
 <body>
+    <!-- Barra de navegación -->
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <!-- <a class="navbar-item" href=""> -->
+            <img src="/Materiales/logo-verde.png" width="112" height="28">
+          </a>
+          <h2 class="logoname">Flex</h2>
+      
+        </div>
+      
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a href="#producto" class="navbar-item">
+              Producto
+            </a>
+      
+            <a href="#caracteristicas" class="navbar-item">
+              Características
+            </a>
+      
+            <a href="#inicioPrecios" class="navbar-link">
+            Precios
+            </a>
     
+            </div>
+          </div>
+      
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="buttons">
+                <a class="button is-primary" id="btn-abrir-popup">
+                  <strong class="btnIngresar">Ingresar</strong>
+                </a>
+                <a class="button is-light" >
+                  Registrarse
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+<!-- Fin barra de navegación -->
+    <header class="header">
+    <div class="divHeader">
+        <span class="bubble">Nuevo</span>
+
+        <h1 id="producto" class="title1">La plataforma para las empresas del futuro</h1>
+
+        <p class="pHeader">Productos pensados para los negocios del próximo siglo</p>
+    </div>
+
+
+        <img src="Materiales/header.jpg" alt="" class="imgHeader">
+        
+        <div class="divButton">
+            <button class="buttonSol">Solicitar demo</button>
+            <button class="buttonReg">Registrarse</button>
+        </div>
+      </header>
+
+      <!-- Agregado de informacion bajo header como cards -->
+      <main id="caracteristicas" class="main">
+          <div class="info">
+            <div class="divImg">
+              <img src="Materiales/mail-icon.svg" alt="mail-icon.svg" class="icons">
+            </div>
+              <h2 class="titleCard">Capacitación</h2>
+              <h3 class="cardContent">Asistencia y capacitación de primer nivel</h3>
+          </div>
+          <div class="info">
+            <div class="divImg">
+              <img src="Materiales/analytics-icon.svg" alt="analytics-icon" class="icons">
+            </div>
+              <h2 class="titleCard">Analíticas claras</h2>
+              <h3  class="cardContent">Disfruta de un dashboard de analíticas claras y accionables</h3>
+            </div>
+          <div class="info">
+              <div class="divImg">
+              <img src="Materiales/people-icon.svg" alt="people-icon.svg" class="icons">
+            </div>
+              <h2 class="titleCard">Soluciones para equipos</h2>
+              <h3 class="cardContent">Facilita el accionar de tu empresa con nuestra suite de herramientas</h3>
+          </div>
+      </main>
+
+    <section id="inicioPrecios" class="sectionInfo">
+        <p class="sectionP">Precios flexibles que escalan contigo</p>
+        <p class="sectionP2">Nuestra facturación se ajusta al tamaño de tu empresa. Tiempo de prueba de 7 días en todos nuestros planes.</p>
+    </section>
+
+    <!-- Cards con precios -->
+    <section class="containerCards">
+        <div class="containCards">
+            <span>PRECIO</span>
+            <p>Plan básico</p>
+            <p class="precio">$10 /mes</p>
+            <p>Facturado anualmente</p>
+            <ul class="lista">
+                <li><img src="Materiales/check-solid.svg" alt="check-solid.svg" class="image is-16x16">1GB de almacenamiento</li>
+                <li><img src="Materiales/check-solid.svg" alt="check-solid.svg" class="image is-16x16">Dashboard completo</li>
+                <li><img src="Materiales/check-solid.svg" alt="check-solid.svg" class="image is-16x16">Asistencia por correo</li>
+                <li><img src="Materiales/check-solid.svg" alt="check-solid.svg" class="image is-16x16">Hasta 10 miembros</li>
+            </ul>
+            <button class="buttonSol sol">Solicitar demo</button>
+        </div>
+        <div class="containCards">
+            <span>PRECIO</span>
+            <p>Plan freelancer</p>
+            <p class="precio">$99 /mes</p>
+            <p>Facturado anualmente</p>
+            <ul class="lista">
+                <li><img src="Materiales/check-solid.svg" alt="check-solid.svg" class="image is-16x16">Características básicas</li>
+                <li><img src="Materiales/check-solid.svg" alt="check-solid.svg" class="image is-16x16">Asistencia preferencial</li>
+                <li><img src="Materiales/check-solid.svg" alt="check-solid.svg" class="image is-16x16">100GB de almacenamiento</li>
+                <li><img src="Materiales/check-solid.svg" alt="check-solid.svg" class="image is-16x16">Hasta 100 miembros</li>
+            </ul>
+            <button class="buttonSol sol">Solicitar demo</button>
+        </div>
+        <div class="containCards">
+            <span>PRECIO</span>
+            <p>Plan empresas</p>
+            <p class="precio">$799 /mes</p>
+            <p>Facturado anualmente</p>
+            <ul class="lista">
+                <li><img src="Materiales/check-solid.svg" alt="check-solid.svg" class="image is-16x16">Características freelancer</li>
+                <li><img src="Materiales/check-solid.svg" alt="check-solid.svg" class="image is-16x16">1TB de almacenamiento</li>
+                <li><img src="Materiales/check-solid.svg" alt="check-solid.svg" class="image is-16x16">Asistencia telefónica 24/7</li>
+                <li><img src="Materiales/check-solid.svg" alt="check-solid.svg" class="image is-16x16">Miembros ilimitados</li>
+            </ul>
+            <button class="buttonSol sol">Solicitar demo</button>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+
+    <footer>
+       
+        <nav class="footerNav">
+            <div class="divfooter">
+                <img src="Materiales/logo-verde.png" alt="logo-verde.png" class="imgFooter ">
+                <h2>Flex</h2>
+            </div>
+            <div class="divNav">
+                <h3>Producto</h3>
+                <h3>Funcionalidades</h3>
+                <h3>Precios</h3>
+                <h3>Recursos</h3>
+                <h3>Carreras</h3>
+                <h3>Ayuda</h3>
+                <h3>Privacidad</h3>
+            </div>
+            <div class="divFinal">
+                <p>© 2022 Flex. Un producto ficticio de Senpai.</p>
+            </div>
+        </nav>
+
+
+    </footer>
+
+    <div class="overlay" id="overlay">
+        <div class="popup" id="popup">
+            <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+            <div class="titulos">
+                <img src="Materiales/logo-blanco.png" alt="logo-blanco.png" class="logo-blanco">
+                <h2>Ingresa a tu cuenta</h2>
+                <h3>Y empieza a conseguir resultados</h3>
+            </div>
+            <div class="contenedorInputs">
+                <p>Correo</p>
+                <input type="email" placeholder="Ingrese su correo">
+                <p>Contraseña</p>
+                <input type="password" placeholder="Ingrese su contraseña">
+            <div class="check">
+                <label><input type="checkbox"> Recordarme </label>
+                <p>Olvidé mi contraseña</p>
+            </div>
+            </div>
+            <div class="ingresar">
+                <button class="buttonSol sol">Ingresar</button>
+            </div>
+            <div>¿Aún no tienes cuenta? <a href="">Regístrate</a></div>
+        </div>
+    </div>
+
+
+    <script src="/script.js"></script>
 </body>
 </html>

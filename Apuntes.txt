@@ -1,0 +1,6 @@
+Verde:      #2ad167
+Gris negro: #2a3342
+Gris:       #90a2b8
+Blanquito   #f7f8f9
+
+Poner modal para botones solicitar y registrarse

@@ -1,0 +1,344 @@
+/* Utilicé bulma solo para la barra de navegación y parte del Header */
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.logoname {
+    font-size: 50px;
+    font-weight: bold;
+}
+.btnIngresar {
+    color: #90a2b8;
+}
+
+/* Estilos en el header */
+header {
+    margin-top: 90px;
+    padding: 70px;
+}
+
+.imgHeader {
+    float: right;
+    width: 650px;
+}
+
+.divHeader {
+    display: inline-block;
+    width: 50%;
+}
+.bubble {
+    background-color: #2ad167;
+    padding: 5px;
+    border-radius: 15px;
+    color: white;
+}
+.title1 {
+    color: #363636;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.125;
+  margin: 10px 0px 24px;
+  font-size: 75px;
+  
+}
+.pHeader {
+    font-size: 20px;
+}
+/* Estilos de botones bajo header
+ */
+
+ .divButton {
+     display: inline-block;
+     width: 50%;
+     margin-top: 30px;
+ }
+.buttonSol {
+    background-color: #2ad167;
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+    border-radius: 7px;
+    margin-right: 10px;
+    padding: 0.5em 1.2em;
+    border: hidden;
+
+}
+.buttonSol:hover {
+    color: #2a3342;
+    box-shadow: 0 4px 16px #2ad167;
+    transition: all 0.2s ease;
+}
+.buttonReg {
+    color: #2a3342;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0.5em 1.2em;
+    background: #ffffff;
+    border: 1px solid;
+    border-color: #2a3342;
+    position: relative;
+    border-radius: 7px;
+}
+.buttonReg:hover {
+    color: #19201c;
+    box-shadow: 0 4px 16px #2ad167;
+    transition: all 0.2s ease;
+}
+/* Estilos del main */
+main {
+    margin-top: 180px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+}
+.info {
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+}
+.icons {
+    width: 35px;
+    height: 35px;
+    margin: 15px;
+    background-color: #2ad167;
+    color: white;
+}
+.titleCard {
+    font-size: 25px;
+    font-weight: 600;
+    color:#2a3342;
+    
+}
+.cardContent {
+    font-size: 18px;
+    text-align: center;
+}
+.divImg {
+    background-color: #2ad167;
+    border-radius: 7px;
+}
+/* Estilos del section */
+.sectionInfo {
+    margin: 40px;
+}
+
+.sectionP {
+    font-size: 70px;
+    font-weight: 900;
+    color: #2a3342;
+}
+.sectionP2 {
+    font-size: 20px;
+    font-weight: 500;
+}
+/* Estilos de las tarjetas con precios */
+.containerCards {
+    display: flex;
+    margin: 100px 50px 80px;
+    gap: 20px;
+    justify-content: center;
+}
+.containCards {
+    width: 33%;
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f7f8f9;
+    gap: 10px;
+}
+.containCards > span,
+span + p {
+    margin-top: 30px;
+    color: #2ad167;
+    font-weight: 500;
+}
+.precio {
+    font-size: 32px;
+    font-weight: 500;
+}
+.precio + p {
+    margin: 10px;
+}
+.lista > li {
+    display: flex;
+    align-items:center;
+    gap: 10px;
+    margin: 7px;
+}
+.sol {
+    width: 90%;
+}
+/* Estilos del pie de página */
+
+.footerNav {
+    background-color: #2a3342;
+    color: #90a2b8;
+    display: flex;
+    flex-direction: column;
+}
+
+.divfooter {
+    text-align: center;
+    margin: 60px 0px 20px;
+}
+.imgFooter {
+    width: 48px;
+    display: inline-block ;
+}
+
+.imgFooter + h2 {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+    vertical-align:top;
+}
+.divNav {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+.divFinal {
+    margin:  40px 0px 20px;
+    padding: 35px;
+    text-align: center;
+    border-top: solid;
+    border-top-width: 0.1px ;
+}
+
+/* Estilos del pop-up */
+
+.overlay {
+    background-color: rgba(42,51,66,.7);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+.overlay.active {
+    visibility: visible;
+}
+
+.popup {
+    background-color: #2a3342;
+    border-radius: 5px;
+    font-family:'Roboto' sans-serif;
+    padding: 20px;
+    text-align: center;
+    width: 600px;
+    transition: .3s ease all;
+	transform: scale(0.7);
+	opacity: 0;
+}
+.btn-cerrar-popup {
+    font-size: 16px;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    color: white;
+    transition: .3s ease all;
+
+}
+.btn-cerrar-popup:hover {
+    color: #2ad167;
+}
+
+.logo-blanco {
+    width: 48px;
+}
+.titulos > h2 {
+    font-size: 36px;
+    font-weight: 500;
+    color: white;
+    /* opacity: 0; */
+}
+.titulos > h3 {
+    font-size: 18px;
+    font-weight: 300;
+    color: #90a2b8;
+    margin-bottom: 30px;
+    /* opacity: 0; */
+}
+
+.contenedorInputs > input {
+    width: 100%;
+    margin-bottom: 20px;
+    height: 52px;
+    line-height: 52px;
+    font-size: 18px;
+    border: 1px solid #bbbbbb;
+
+}
+.contenedorInputs > p {
+    color: white;
+    text-align: left;
+
+}
+.check label {
+    float: left;
+    color: white;
+}
+.check p {
+    float: right;
+    color: white;
+}
+
+.ingresar {
+    margin-top: 40px;
+    transition: .3s ease all;
+}
+.ingresar button {
+    margin-bottom: 20px;
+}
+.ingresar + div {
+    color: white;
+}
+.ingresar + div > a {
+    color: rgb(231, 142, 142);
+    transition: .3s ease all;
+}
+.ingresar + div > a:hover {
+color: #2ad167;
+}
+
+.popup.active {	transform: scale(1); opacity: 1; }
+.popup.active h3 { animation: entradaTitulo .8s ease .5s forwards; }
+.popup.active h4 { animation: entradaSubtitulo .8s ease .5s forwards; }
+.popup.active .contenedor-inputs { animation: entradaInputs 1s linear 1s forwards; }
+
+@media (max-width: 844px) {
+    .navbar-end {
+        display: inline;
+        float: right;}
+
+    .navbar-menu {
+        text-align:left;
+        width: 100%;
+    }
+    .title1 {
+        font-size: 50px;
+    }
+    .divButton {
+        display: flex;
+        margin-top: 600px;
+        align-content: center;
+    }
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+    .containerCards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
