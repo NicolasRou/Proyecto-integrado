@@ -20,7 +20,7 @@ header {
 
 .imgHeader {
     float: right;
-    width: 650px;
+    width: 39%;
 }
 
 .divHeader {
@@ -47,6 +47,17 @@ header {
 }
 /* Estilos de botones bajo header
  */
+ .divPrueba {
+    position: absolute;
+    right: 35%;
+    top: 20%;
+ }
+ .divPrueba2 {
+     position: absolute;
+     right: 1%;
+     top: 80%;
+     max-width: 100%;
+ }
 
  .divButton {
      display: inline-block;
@@ -120,6 +131,7 @@ main {
 .divImg {
     background-color: #2ad167;
     border-radius: 7px;
+    color: white;
 }
 /* Estilos del section */
 .sectionInfo {
@@ -317,13 +329,22 @@ color: #2ad167;
 .popup.active .contenedor-inputs { animation: entradaInputs 1s linear 1s forwards; }
 
 @media (max-width: 844px) {
+    body {
+        min-width: 100%;
+    }
     .navbar-end {
-        display: inline;
+        display: flex;
         float: right;}
 
     .navbar-menu {
+        display: flex;
+        flex-direction: row;
         text-align:left;
         width: 100%;
+    }
+    .navbar-start {
+        display: flex;
+        margin-top: 100px;
     }
     .title1 {
         font-size: 50px;
