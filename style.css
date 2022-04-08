@@ -49,11 +49,15 @@ header {
  */
  .divPrueba {
     position: absolute;
+    max-width: 100%;
     right: 35%;
     top: 20%;
  }
+
+
  .divPrueba2 {
      position: absolute;
+     max-width: 100%;
      right: 1%;
      top: 80%;
      max-width: 100%;
@@ -330,25 +334,48 @@ color: #2ad167;
 
 @media (max-width: 844px) {
     body {
-        min-width: 100%;
+        width: 100%;
     }
-    .navbar-end {
-        display: flex;
-        float: right;}
-
+    .navbar {
+        flex-wrap: wrap;
+    }
     .navbar-menu {
         display: flex;
-        flex-direction: row;
-        text-align:left;
-        width: 100%;
+        
     }
     .navbar-start {
         display: flex;
-        margin-top: 100px;
     }
+
+    .navbar-end {
+        display: flex;
+        margin-left: 40%;
+    }
+
+    
+   /* Header */
+   .divHeader {
+       width: auto;
+   }
+
     .title1 {
         font-size: 50px;
     }
+
+    .imgHeader {
+        width: auto;
+        margin-top: 80px;
+    }
+
+    .divPrueba {
+        left: 120px;
+        top: 58%;
+    }
+
+    .divPrueba2 {
+        top: 105%;
+    }
+
     .divButton {
         display: flex;
         margin-top: 600px;
@@ -357,6 +384,7 @@ color: #2ad167;
     .main {
         flex-direction: column;
         align-items: center;
+        margin-top: 50px;
     }
     .containerCards {
         flex-direction: column;
