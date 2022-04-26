@@ -3,16 +3,13 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
-
 .logoname {
     font-size: 50px;
     font-weight: bold;
 }
-
 .btnIngresar {
     color: #90a2b8;
 }
-
 /* Estilos en el header */
 header {
     margin-top: 90px;
@@ -21,21 +18,16 @@ header {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 2fr 1fr;
 }
-
-
-
 .divHeader {
     grid-column: 1;
     grid-row: 1;
 }
-
 .bubble {
     background-color: #2ad167;
     padding: 5px;
     border-radius: 15px;
     color: white;
 }
-
 .title1 {
     color: #363636;
   font-size: 2rem;
@@ -43,7 +35,6 @@ header {
   line-height: 1.125;
   margin: 30px 0px 30px;
   font-size: 75px;
-
 }
 .pHeader {
     font-size: 20px;
@@ -56,11 +47,7 @@ header {
     grid-row: 1 / span 2;
     display: flex;
     justify-content: center;
-
-
-    
 }
-
 .imgHeader {
     grid-column: 2;
     grid-row: 1;
@@ -70,28 +57,23 @@ header {
     margin-top: 60px;
     margin-bottom: 50px;
 }
-
  .divPrueba {
     grid-column: 2;
     grid-row: 1;
     margin-right: 570px ;
     position: absolute;
  }
-
  .divPrueba2 {
     grid-column: 2;
     grid-row: 1;
     position: absolute;
     margin: 470px 0px 0px 580px;
-    
  }
-
  .divButton {
     display: inline-block;
-    width: 50%;
     grid-column: 1;
     grid-row: 2;
-
+    margin-top: 10px;
  }
 .buttonSol {
     background-color: #2ad167;
@@ -102,7 +84,6 @@ header {
     margin-right: 10px;
     padding: 0.5em 1.2em;
     border: hidden;
-
 }
 .buttonSol:hover {
     color: #2a3342;
@@ -215,14 +196,12 @@ span + p {
     width: 90%;
 }
 /* Estilos del pie de página */
-
 .footerNav {
     background-color: #2a3342;
     color: #90a2b8;
     display: flex;
     flex-direction: column;
 }
-
 .divfooter {
     text-align: center;
     margin: 60px 0px 20px;
@@ -231,7 +210,6 @@ span + p {
     width: 48px;
     display: inline-block ;
 }
-
 .imgFooter + h2 {
     display: inline-block;
     font-size: 20px;
@@ -251,9 +229,7 @@ span + p {
     border-top: solid;
     border-top-width: 0.1px ;
 }
-
 /* Estilos del pop-up */
-
 .overlay {
     background-color: rgba(42,51,66,.7);
     position: fixed;
@@ -269,7 +245,6 @@ span + p {
 .overlay.active {
     visibility: visible;
 }
-
 .popup {
     background-color: #2a3342;
     border-radius: 5px;
@@ -288,12 +263,10 @@ span + p {
     text-align: right;
     color: white;
     transition: .3s ease all;
-
 }
 .btn-cerrar-popup:hover {
     color: #2ad167;
 }
-
 .logo-blanco {
     width: 48px;
 }
@@ -310,7 +283,6 @@ span + p {
     margin-bottom: 30px;
     /* opacity: 0; */
 }
-
 .contenedorInputs > input {
     width: 100%;
     margin-bottom: 20px;
@@ -318,12 +290,10 @@ span + p {
     line-height: 52px;
     font-size: 18px;
     border: 1px solid #bbbbbb;
-
 }
 .contenedorInputs > p {
     color: white;
     text-align: left;
-
 }
 .check label {
     float: left;
@@ -333,7 +303,6 @@ span + p {
     float: right;
     color: white;
 }
-
 .ingresar {
     margin-top: 40px;
     transition: .3s ease all;
@@ -351,7 +320,6 @@ span + p {
 .ingresar + div > a:hover {
 color: #2ad167;
 }
-
 .popup.active {	transform: scale(1); opacity: 1; }
 .popup.active h3 { animation: entradaTitulo .8s ease .5s forwards; }
 .popup.active h4 { animation: entradaSubtitulo .8s ease .5s forwards; }
@@ -370,12 +338,10 @@ color: #2ad167;
     }
     .navbar-menu {
         display: flex;
-        
     }
     .navbar-start {
         display: flex;
     }
-
     .navbar-end {
         display: flex;
         margin-left: 40%;
@@ -386,11 +352,9 @@ color: #2ad167;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
    }
-
    .divHeader {
        width: auto;
    }
-
     .title1 {
         font-size: 50px;
     }
@@ -398,52 +362,43 @@ color: #2ad167;
     .imgs {
         grid-row: 2;
         grid-column: 1;
-
     }
-
     .imgHeader {
         width: auto;
         margin-top: 80px;
     }
-
     .divPrueba {
         grid-column: 1;
         grid-row: 2;
         position: absolute;
         margin: 190px 280px 0px 0px;
     }
-
     .divPrueba2 {
         grid-column: 1;
         grid-row: 2;
         position: absolute;
         margin: 450px 10px 0px 280px;
     }
-
     .divButton {
         display: flex;
         margin-top: 600px;
         align-content: center;
         grid-row: 1;
     }
-
     .main {
         flex-direction: column;
         align-items: center;
         margin-top: 0px;
         padding: 5px;
     }
-
     .containerCards {
         flex-direction: column;
         align-items: center;
         /* margin: 100px 0px 0px 80px; */
     }
-
     .containCards {
         width: 100%;
     }
-
     .divNav {
         flex-wrap: wrap;
     }
